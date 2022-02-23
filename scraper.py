@@ -45,6 +45,7 @@ for movie in movie_info:
     tokens = []
     script_details = [str(s) for s in script_details]
    
+    # Get writer and genre tokens
     for j in range(len(script_details)):
         script_detail = script_details[j]
         start_idx_init = script_detail.find("w=") 
@@ -90,5 +91,11 @@ for movie in movie_info:
     
 
 dataset.close()
+
+# Write all distinct genres and writers to special tokens file
+special_tokens = open("special-tokens.txt", "w+")
+for token in total_distinct_tokens:
+    special_tokens.write(token + "\n")
+special_tokens.close()
 
     
