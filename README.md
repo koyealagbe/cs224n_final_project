@@ -1,4 +1,5 @@
-# cs224n_final_project
+# cs224n Final Project: Comparison of NLP Models for a Writer and Genre Style Controlled Movie Screenplay Generator
+
 An NLP model that generates movie screenplays based on genre and director style
 
 This project was done using the resources of Stanford University and the staff of CS 224N. 
